@@ -1,7 +1,6 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Carlito:wght@400;700&family=Montserrat+Alternates:wght@400;500;600&display=swap');
 
-/* CSS Variables */
 :root {
     --primary-color: #1f4e70;
     --secondary-color: #333333;
@@ -14,7 +13,6 @@
     --paragraph-font: 'Carlito', Calibri, sans-serif;
 }
 
-/* General Settings */
 * {
     margin: 0;
     padding: 0;
@@ -72,7 +70,7 @@ nav a:hover {
     color: var(--secondary-color);
 }
 
-/* MAIN CONTENT */
+/* MAIN */
 main {
     max-width: 1100px;
     margin: 25px auto;
@@ -112,7 +110,7 @@ h1 {
 /* ABOUT ME */
 .about,
 .country {
-    display: flow-root; /* keeps floated images inside their box */
+    display: flow-root;
     padding: 15px 20px;
 }
 
@@ -124,7 +122,7 @@ h1 {
     border: 1px solid var(--border-color);
 }
 
-/* COUNTRY TITLE (with line underneath) */
+/* COUNTRY TITLE */
 .card h3 {
     font-family: var(--paragraph-font);
     font-size: 1.3rem;
@@ -164,7 +162,7 @@ figcaption {
 }
 
 .resources ul {
-    margin: auto 0; /* centers the list vertically in the card */
+    margin: auto 0;
     padding: 20px 20px 20px 45px;
 }
 
@@ -189,7 +187,7 @@ footer #lastModified {
     font-size: 0.85rem;
 }
 
-/* RESPONSIVE DESIGN */
+/* RESPONSIVE */
 @media screen and (max-width: 700px) {
     main {
         grid-template-columns: 1fr;
