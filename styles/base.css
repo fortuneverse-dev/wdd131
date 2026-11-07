@@ -1,5 +1,5 @@
 /* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carlito:wght@400;700&family=Montserrat+Alternates:wght@400;500;600&display=swap');
 
 /* CSS Variables */
 :root {
@@ -10,8 +10,8 @@
     --border-color: #cccccc;
     --accent-color: #f4c542;
 
-    --heading-font: 'Montserrat', sans-serif;
-    --paragraph-font: 'Roboto', sans-serif;
+    --heading-font: 'Montserrat Alternates', sans-serif;
+    --paragraph-font: 'Carlito', Calibri, sans-serif;
 }
 
 /* General Settings */
@@ -23,6 +23,7 @@
 
 body {
     font-family: var(--paragraph-font);
+    font-size: 1.1rem;
     color: var(--text-color);
     background-color: var(--background-color);
     line-height: 1.6;
@@ -33,15 +34,14 @@ header {
     background-color: var(--primary-color);
     color: white;
     text-align: center;
-    padding: 15px;
 }
 
 header span {
     display: block;
     font-family: var(--heading-font);
-    font-size: 1.2rem;
-    font-weight: 600;
-    padding: 5px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 15px;
 }
 
 /* NAVIGATION */
@@ -61,12 +61,12 @@ nav li {
 nav a {
     display: block;
     color: white;
+    font-family: var(--heading-font);
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 12px 15px;
     transition: background-color 0.3s ease;
 }
 
-/* Navigation Hover Effect */
 nav a:hover {
     background-color: var(--accent-color);
     color: var(--secondary-color);
@@ -77,19 +77,18 @@ main {
     max-width: 1100px;
     margin: 25px auto;
     padding: 0 15px;
-
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 15px;
 }
 
-/* Main Heading */
 h1 {
     grid-column: 1 / -1;
     font-family: var(--heading-font);
+    font-weight: 500;
     text-align: center;
-    font-size: 2rem;
-    margin-bottom: 5px;
+    font-size: 2.4rem;
+    margin: 10px 0;
 }
 
 /* CARDS */
@@ -100,47 +99,77 @@ h1 {
     background-color: white;
 }
 
-/* Card Headings */
 .card h2 {
     background-color: var(--primary-color);
     color: white;
     text-align: center;
     padding: 10px;
-    font-family: var(--heading-font);
-    font-size: 1rem;
+    font-family: var(--paragraph-font);
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
-/* Card Paragraphs */
-.card p {
-    padding: 15px;
-    font-size: 0.95rem;
+/* ABOUT ME */
+.about,
+.country {
+    display: flow-root; /* keeps floated images inside their box */
+    padding: 15px 20px;
 }
 
-/* ABOUT ME IMAGE */
-.card:first-of-type img {
+.about img {
     float: right;
-    width: 130px;
+    width: 165px;
     height: auto;
-    margin: 15px;
+    margin: 0 0 10px 15px;
+    border: 1px solid var(--border-color);
 }
 
-/* ABOUT ME PARAGRAPH */
-.card:first-of-type p {
-    padding: 15px;
+/* COUNTRY TITLE (with line underneath) */
+.card h3 {
+    font-family: var(--paragraph-font);
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-align: center;
+    width: 60%;
+    margin: 5px auto 0;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--border-color);
 }
 
-/* MY COUNTRY IMAGE */
-.card:nth-of-type(2) img {
+/* FLAG + CAPTION */
+.country figure {
     float: left;
-    width: 120px;
-    height: 90px;
-    object-fit: cover;
-    margin: 15px;
+    width: 190px;
+    margin: 10px 15px 10px 0;
+    text-align: center;
 }
 
-/* MY COUNTRY PARAGRAPH */
-.card:nth-of-type(2) p {
-    padding: 15px;
+.country img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--border-color);
+}
+
+figcaption {
+    font-size: 0.85rem;
+    font-style: italic;
+    margin-top: 8px;
+}
+
+/* WEB DEV RESOURCES */
+.resources {
+    display: flex;
+    flex-direction: column;
+}
+
+.resources ul {
+    margin: auto 0; /* centers the list vertically in the card */
+    padding: 20px 20px 20px 45px;
+}
+
+.resources li {
+    margin: 6px 0;
 }
 
 /* FOOTER */
@@ -157,19 +186,17 @@ footer p {
 }
 
 footer #lastModified {
-    color: var(--background-color);
     font-size: 0.85rem;
 }
 
 /* RESPONSIVE DESIGN */
 @media screen and (max-width: 700px) {
-
     main {
         grid-template-columns: 1fr;
     }
 
     h1 {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     }
 
     nav ul {
@@ -180,11 +207,11 @@ footer #lastModified {
         width: 100%;
     }
 
-    .card:first-of-type img {
-        width: 100px;
+    .about img {
+        width: 110px;
     }
 
-    .card:nth-of-type(2) img {
-        width: 100px;
+    .country figure {
+        width: 130px;
     }
 }
