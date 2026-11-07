@@ -1,3 +1,20 @@
+
+@media (min-width: 700px) {
+
+    /* everything that was in temples-large.css goes here, indented */
+    .menu-button {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 /* ===== temples-large.css : larger view (700px and up) ===== */
 /* Loaded with media="(min-width: 700px)" in temples.html */
 
