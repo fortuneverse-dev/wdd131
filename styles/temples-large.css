@@ -1,4 +1,7 @@
 
+/* ===== temples-large.css : larger view (700px and up) ===== */
+/* Loaded with media="(min-width: 700px)" in temples.html */
+
 @media (min-width: 700px) {
 
     /* everything that was in temples-large.css goes here, indented */
@@ -13,12 +16,7 @@
     .gallery {
         grid-template-columns: repeat(3, 1fr);
     }
-}
-
-/* ===== temples-large.css : larger view (700px and up) ===== */
-/* Loaded with media="(min-width: 700px)" in temples.html */
-
-/* Hide the hamburger button; show the nav as a row */
+    /* Hide the hamburger button; show the nav as a row */
 .menu-button {
     display: none;
 }
@@ -53,3 +51,6 @@ nav a {
 h1 {
     font-size: 2rem;
 }
+
+}
+
