@@ -1,0 +1,38 @@
+/* ===== temples-large.css : larger view (700px and up) ===== */
+/* Loaded with media="(min-width: 700px)" in temples.html */
+
+/* Hide the hamburger button; show the nav as a row */
+.menu-button {
+    display: none;
+}
+
+nav,
+nav.open {
+    display: block;
+    width: auto;
+    margin-top: 0;
+}
+
+nav ul {
+    display: flex;
+    gap: 0.5rem;
+}
+
+nav li + li {
+    border-top: none;
+}
+
+nav a {
+    padding: 0.5rem 0.9rem;
+    border-radius: 4px;
+}
+
+/* Three columns for the gallery */
+.gallery {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem 1.5rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
