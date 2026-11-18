@@ -1,0 +1,135 @@
+/* ---------- Global variables ---------- */
+:root {
+    --canada-red: #C8102E;
+    --canada-red-dark: #8F0B21;
+    --ink: #1F1F1F;
+    --white: #FFFFFF;
+    --page-bg: #F6EFE9;
+    --rule: #E3D6CB;
+
+    --font-heading: Georgia, "Times New Roman", serif;
+    --font-body: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+    --column-width: 37.5rem;
+    --space: 1rem;
+}
+
+/* ---------- Base ---------- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--ink);
+    background-color: var(--page-bg);
+}
+
+/* Centered single column on mobile */
+header,
+main,
+footer {
+    max-width: var(--column-width);
+    margin-inline: auto;
+}
+
+/* ---------- Header ---------- */
+header {
+    background-color: var(--canada-red);
+    border-bottom: 0.5rem solid var(--canada-red-dark);
+}
+
+h1 {
+    margin: 0;
+    padding: 1.25rem var(--space);
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--white);
+}
+
+/* ---------- Hero image ---------- */
+.hero {
+    display: block;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 28rem;
+    object-fit: cover;
+}
+
+/* ---------- Data and Weather cards ---------- */
+.data,
+.weather {
+    padding: 1.5rem var(--space);
+    background-color: var(--white);
+    text-align: center;
+}
+
+.data {
+    border-top: 0.35rem solid var(--canada-red);
+}
+
+.weather {
+    border-top: 1px solid var(--rule);
+}
+
+h2 {
+    margin: 0 0 var(--space);
+    font-family: var(--font-heading);
+    font-size: 1.6rem;
+    color: var(--canada-red-dark);
+}
+
+/* Weather icon below the heading on mobile (pseudo-element) */
+.weather h2::after {
+    content: "⛅";
+    display: block;
+    margin-top: 0.25rem;
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+/* Label / value rows */
+dl {
+    max-width: 22rem;
+    margin: 0 auto;
+}
+
+dl div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space);
+    padding: 0.35rem 0;
+}
+
+dt {
+    font-weight: 700;
+    text-align: right;
+}
+
+dd {
+    margin: 0;
+    text-align: left;
+}
+
+/* ---------- Footer ---------- */
+footer {
+    padding: 1.25rem var(--space);
+    background-color: var(--canada-red);
+    color: var(--white);
+    text-align: center;
+}
+
+footer p {
+    margin: 0.25rem 0;
+}

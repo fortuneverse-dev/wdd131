@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Canada in autumn: key facts and current weather for a country I want to visit.">
+    <meta name="author" content="Daphcar Fortune">
+    <title>Canada | Place to Visit</title>
+
+    <!-- Mobile-first styles load for every screen; wide-view styles load from 700px up -->
+    <link rel="stylesheet" href="place.css">
+    <link rel="stylesheet" href="place-large.css" media="(min-width: 700px)">
+
+    <script src="place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Canada</h1>
+    </header>
+
+    <main>
+        <!-- Hero image: a different file is used depending on the screen width -->
+       <picture class="hero">
+    <source
+        media="(min-width: 700px)"
+        srcset="../images/canada_autumn.jpeg"
+        width="1600" height="900">
+    <img
+        src="../images/canada_autumn.jpeg"
+        srcset="../images/canada_autumn.jpeg"
+        width="640" height="800"
+        alt="Autumn path lined with red and orange maple trees beside Lake Ontario, with the Toronto skyline and a Canadian flag in the distance">
+</picture>
+
+        <section class="data" aria-labelledby="data-heading">
+            <h2 id="data-heading">Data</h2>
+            <dl>
+                <div>
+                    <dt>Area:</dt>
+                    <dd>9,984,670 sq km</dd>
+                </div>
+                <div>
+                    <dt>Population:</dt>
+                    <dd>About 41 million</dd>
+                </div>
+                <div>
+                    <dt>Capital:</dt>
+                    <dd>Ottawa</dd>
+                </div>
+                <div>
+                    <dt>Languages:</dt>
+                    <dd>English, French</dd>
+                </div>
+                <div>
+                    <dt>Currency:</dt>
+                    <dd>Canadian Dollar (CAD)</dd>
+                </div>
+                <div>
+                    <dt>Calling Code:</dt>
+                    <dd>+1</dd>
+                </div>
+                <div>
+                    <dt>Internet TLD:</dt>
+                    <dd>.ca</dd>
+                </div>
+            </dl>
+        </section>
+
+        <section class="weather" aria-labelledby="weather-heading">
+            <h2 id="weather-heading">Weather <span class="weather-icon" role="img" aria-label="Partly cloudy">⛅</span></h2>
+            <dl>
+                <div>
+                    <dt>Temperature:</dt>
+                    <dd><span id="temperature">12</span> °C</dd>
+                </div>
+                <div>
+                    <dt>Conditions:</dt>
+                    <dd>Partly Cloudy</dd>
+                </div>
+                <div>
+                    <dt>Wind:</dt>
+                    <dd><span id="wind">15</span> km/h</dd>
+                </div>
+                <div>
+                    <dt>Wind Chill:</dt>
+                    <dd><span id="windchill">N/A</span></dd>
+                </div>
+            </dl>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear">2026</span> 🥀Daphcar Fortune🥀 | Canada</p>
+        <p>Last Modification: <span id="lastModified">Not available</span></p>
+    </footer>
+</body>
+</html>
