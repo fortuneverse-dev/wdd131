@@ -91,12 +91,12 @@ h2 {
 }
 
 /* Weather icon below the heading on mobile (pseudo-element) */
-.weather h2::after {
-    content: "⛅";
+
+.weather-icon {
     display: block;
-    margin-top: 0.25rem;
-    font-size: 3rem;
-    line-height: 1.2;
+    width: 4rem;
+    height: 4rem;
+    margin: 0 auto var(--space);
 }
 
 /* Label / value rows */
