@@ -1,73 +1,39 @@
 /* ===== filtered-temples-large.css : larger view (700px and up) ===== */
-/* Loaded with media="(min-width: 700px)" in filtered-temples.html */
 
-.menu-button {
-    display: none;
-}
+@media (min-width: 700px) {
 
-nav,
-nav.open {
-    display: block;
-    width: auto;
-    margin-top: 0;
-}
+    .menu-button {
+        display: none;
+    }
 
-nav ul {
-    display: flex;/* ===== filtered-temples-large.css : larger view (700px and up) ===== */
-/* Loaded with media="(min-width: 700px)" in filtered-temples.html */
+    nav,
+    nav.open {
+        display: block;
+        width: auto;
+        margin-top: 0;
+    }
 
-.menu-button {
-    display: none;
-}
+    nav ul {
+        display: flex;
+        gap: 0.5rem;
+    }
 
-nav,
-nav.open {
-    display: block;
-    width: auto;
-    margin-top: 0;
-}
+    nav li + li {
+        border-top: none;
+    }
 
-nav ul {
-    display: flex;
-    gap: 0.5rem;
-}
+    nav a {
+        padding: 0.5rem 0.9rem;
+        border-radius: 4px;
+    }
 
-nav li + li {
-    border-top: none;
-}
+    /* Three columns for the gallery */
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem 1.5rem;
+    }
 
-nav a {
-    padding: 0.5rem 0.9rem;
-    border-radius: 4px;
-}
-
-/* Three columns for the gallery */
-.gallery {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem 1.5rem;
-}
-
-h1 {
-    font-size: 2rem;
-}
-    gap: 0.5rem;
-}
-
-nav li + li {
-    border-top: none;
-}
-
-nav a {
-    padding: 0.5rem 0.9rem;
-    border-radius: 4px;
-}
-
-/* Three columns for the gallery */
-.gallery {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem 1.5rem;
-}
-
-h1 {
-    font-size: 2rem;
+    h1 {
+        font-size: 2rem;
+    }
 }
